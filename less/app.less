@@ -1,5 +1,6 @@
 @import "less/lib/bootstrap/bootstrap";
 @import "less/lib/font-awesome/font-awesome";
+@import "less/typography";
 @import "less/medium";
 
 // Global variables
@@ -225,73 +226,14 @@ header {
 
 	&.poster-news {
 		.logo-wrapper {
-			.logo.logo-news {
+			.logo.logo-listening {
 				display: inline-block !important;
 				border: none;
 
 				.sixteen-by-nine& {
-					height: 40px;
+					height: 80px;
 					width: auto;
 				}
-			}
-		}
-	}
-
-	&.poster-music {
-		background: @musicDark;
-		color: @musicLight;
-
-		.logo {
-			border: 1px solid @musicLight;
-		}
-
-		.logo-wrapper {
-			background: @musicDark;
-			padding-bottom: @grid-gutter-width * 2 - 14;
-
-			.logo.logo-music {
-				display: inline-block !important;
-				border: none;
-
-				.sixteen-by-nine& {
-					width: 242px;
-					height: 65px;
-					overflow: hidden;
-					background: url('../assets/npr-music-logo-small.png') no-repeat;
-					padding-left: 242px;
-				}
-			}
-		}
-	}
-
-	&.poster-snap-judgement {
-		background: #C66137;
-		color: #fff;
-
-		.logo-wrapper {
-			background: #C66137;
-			color: #fff;
-			padding-bottom: @grid-gutter-width * 2 - 14;
-
-			.logo.logo-snap-judgement {
-				display: inline-block !important;
-				border: none;
-				width: 300px;
-
-				.sixteen-by-nine& {
-					width: 150px;
-				}
-			}
-		}
-	}
-
-	&.poster-fresh-air {
-		.logo-wrapper {
-			padding-bottom: @grid-gutter-width * 2 - 14;
-
-			.logo.logo-fresh-air {
-				display: inline-block !important;
-				border: none;
 			}
 		}
 	}
@@ -318,12 +260,10 @@ header {
 				width: 150px;
 			}
 
-			.poster-music& {
-				padding-bottom: @grid-gutter-width - 10;
-			}
 		}
 
 		p.source {
+			font-family: "Titillium Web";
 			font-size: @font-size-base * 1.3;
 		}
 
@@ -393,6 +333,7 @@ header {
 	}
 
 	p.source {
+		font-family: "Titillium Web";
 		font-size: @font-size-base *1.5;
 		font-weight: normal;
 		line-height: 1.3;

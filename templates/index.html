@@ -20,16 +20,20 @@
 </header>
 <div class="content">
     <div class="poster-wrapper">
-        <div class="poster quote poster-news">
+        <div class="poster quote poster-slota">
             <span class="left-quote">&ldquo;</span>
             <blockquote><p></p></blockquote>
 
             <p class="source"></p>
             <p class="show-credit"></p>
 
-            <p class="logo-wrapper">
+            <div class="logo-wrapper">
+				<img class="logo logo-slota" src="./assets/slota-logo.png">
 				<img class="logo logo-listening" src="./assets/listening-project-logo.png">
-            </p>
+				<div class="stlpr-wrapper">
+					<img class="logo logo-stlpr" src="./assets/stlpr-logo.png">
+				</div>
+            </div>
         </div>
     </div>
     <div class="container">
@@ -43,7 +47,9 @@
                     <div class="form-group">
                         <label>Theme</label>
                         <div id="theme" class="btn-group-vertical">
-                            <button id="news" class="btn btn-default btn-primary">Listening Project</button>
+                            <button id="slota" class="btn btn-default btn-primary">SLOTA</button>
+							<button id="listening" class="btn btn-default">Listening Project</button>
+
                         </div>
                     </div>
                     <div class="form-group">
@@ -61,7 +67,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="show">Attribution</label>
+                        <label for="show">More info</label>
                         <input id="show" class="form-control" name="fontsize" type="text">
                     </div>
                     <div class="form-group">

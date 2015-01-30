@@ -273,6 +273,36 @@ header {
 		}
 	}
 
+	&.poster-cut-paste {
+
+		.logo {
+			border: none;
+		}
+
+		.logo-wrapper {
+			background: '#fff';
+			padding-bottom: 0px;
+
+			.logo.logo-cut-paste {
+				display: inline-block !important;
+				border: none;
+				height: 140px;
+				padding: 0px 20px 5px 0px;
+
+				.sixteen-by-nine& {
+					height: 100px;
+					width: auto;
+					overflow: hidden;
+				}
+			}
+			.logo.logo-stlpr {
+				display: block !important;
+				border: none;
+			}
+			
+		}
+	}
+	
 	&.sixteen-by-nine {
 		height: 360px;
 		padding: @grid-gutter-width;

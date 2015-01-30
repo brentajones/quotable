@@ -132,7 +132,7 @@ $(function() {
     $themeButtons.on('click', function() {
         $themeButtons.removeClass().addClass('btn btn-default');
         $(this).addClass('btn-primary');
-        $poster.removeClass('poster-slota poster-listening')
+        $poster.removeClass('poster-slota poster-listening poster-cut-paste')
                     .addClass('poster-' + $(this).attr('id'));
     });
 
